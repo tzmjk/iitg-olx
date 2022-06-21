@@ -1,0 +1,132 @@
+.viewParentDiv {
+  padding-top: 4em;
+  display: flex;
+  color:rgb(231, 238, 243)
+}
+.viewParentDiv .imageShowDiv {
+  padding: 16px;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  
+}
+.viewParentDiv .imageShowDiv img {
+ 
+  max-width:50vw;
+  max-height: 50vh;
+  height:100%;
+  object-fit: cover;
+}
+
+.viewParentDiv .rightSection {
+  padding: 16px;
+  margin-top: 3em;
+  width: 30vw;
+  position: relative;
+  right:5%;
+}
+
+.viewParentDiv .rightSection .productDetails :first-child {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #002f34;
+  font-size: 60px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  padding:5px;
+
+}
+
+.viewParentDiv .rightSection .productDetails {
+  border: 1px solid black;
+  padding: 0.6rem;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1.5rem;
+
+}
+.viewParentDiv .rightSection .productDetails span:first-of-type {
+ font-weight: 700;
+ font-size: 2.7rem;
+ color: rgb(98, 188, 240);
+}
+.viewParentDiv .rightSection .productDetails p  .category {
+font-size: 1.2rem;
+ color: rgb(137, 212, 255);;
+}
+.viewParentDiv .rightSection .productDetails span  .postedOn {
+font-size: 1.2rem;
+ color: rgb(137, 212, 255);
+}
+
+
+
+.viewParentDiv .rightSection .productDescription {
+  padding: 0.6rem;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+
+
+.viewParentDiv .rightSection .contactInfo{
+
+  font-size: 1.2rem;
+
+}
+
+.p-bold{
+  font-weight: bolder;
+  color:rgb(135, 201, 240);
+}
+
+@media screen and (max-width:600px)
+{
+
+  .viewParentDiv {
+  
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  
+ 
+  }
+  .viewParentDiv .imageShowDiv {
+  
+
+   transform:translateX(5%) ;
+ 
+  }
+  .viewParentDiv .imageShowDiv img{
+  
+   max-width: 85vw;
+   transform:translateX(5%) ;
+ 
+  }
+  .viewParentDiv .rightSection {
+  
+   
+   transform:translateX(-20%) ;
+ 
+  }
+
+  .viewParentDiv .rightSection .productDetails {
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 6px;
+    margin-bottom: 2em;
+    width: fit-content;
+    font-size: 1.5rem;
+  
+  }
+  .viewParentDiv .rightSection .productDescription {
+  
+    padding: 0.6rem;
+    border-radius: 6px;
+    margin-bottom: 2em;
+    width:fit-content;
+    font-size: 1.2rem;
+  }
+  
+
+}

@@ -1,0 +1,123 @@
+.bannerParentDiv {
+  padding-top: 4em;
+} 
+
+.bannerParentDiv .bannerChildDiv .menuBar {
+  display: flex;
+  padding: 10px 16px 10px 16px;
+  background-color: rgb(143, 152, 235);
+}
+
+
+
+.bannerParentDiv .bannerChildDiv .menuBar .categoryMenu span {
+  margin-right: 16px;
+  font-weight: bolder;
+}
+
+
+.bannerParentDiv .bannerChildDiv .menuBar .otherQuickOptions span {
+  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.bannerParentDiv .bannerChildDiv .menuBar .otherQuickOptions span:hover {
+  padding: 10px;
+  color: rgb(146, 245, 245);
+}
+
+.bannerChildDiv .banner {
+  position: relative;
+  width: 100vw;
+  background-color: rgb(105, 103, 103);
+
+}
+.bannerChildDiv .banner img{
+ 
+  width:70vw;
+  height:62vh;
+  
+  position: relative;
+  left:50%;
+  transform:translateX(-50%);
+
+}
+.bannerChildDiv .banner .textonimage{
+z-index: 500;
+color: rgb(252, 252, 252);
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 3rem;
+font-weight: 700;
+animation: moveLeft 1.9s ease-out;
+text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .otherQuickOptions {
+    display: none;
+  }
+  .bannerChildDiv .banner {
+    position: relative;
+  }
+}
+
+.otherQuickOptions span{
+  cursor: pointer;
+  
+}
+@media  screen and (max-width:600px) {
+
+  .bannerChildDiv .banner .textonimage{
+z-index: 500;
+color: rgb(252, 252, 252);
+position: absolute;
+top: 60%;
+left: 50%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+transform: translate(-50%, -50%);
+font-size: 2rem;
+font-weight: 700;
+animation: moveLeft 1.9s ease-out;
+text-align: center;
+
+}
+.bannerChildDiv .banner img{
+ 
+  width:100vw;
+  height:62vh;
+  
+  position: relative;
+  left:50%;
+  transform:translateX(-50%);
+
+}
+
+
+
+
+}
+
+
+@keyframes moveLeft {
+  0% {
+   
+
+    opacity: 0;
+    transform: translateX(-90%); 
+  
+ 
+}
+  60% {
+ 
+    transform: translateX(-30%);  }
+  100% {
+
+    opacity: 1;
+   
+    transform: translate(-50%, -50%);
+  } }
